@@ -16,7 +16,7 @@ About data and output classes:
 - All the images were taken as 256 x 256 x 3 input shape. For few models, images were rezised particularly to fit for those models.
 - Pre-processed images using "preprocess_input" function from imagenet utils module from keras for all models except Resnet50, AL-Resnet and InceptionV3.  
 - For remaining models (not preprocessed in above point), pre-processed images using normalization technique (divide by 255) to standardize pixel values of images. 
-- Fit Generator function has been used for few models but haven't noticed any improvement in model performance. This might be due to 
+- Fit Generator function has been used for few models but haven't noticed any improvement in model performance. This might be due to losing the age sensitive features from images by preprocessing using fit generator.
 
 **Models and approach:**
 
@@ -45,6 +45,13 @@ About data and output classes:
 - " AL_resnet50V2.ipynb " file used for training the AL-Resnet model
 
 - "AL_resnet50V2-8classes.ipynb" file uses 8 classes for AL-Resnet Model Training.
+
+File usage instructions : 
+
+1. All the files have code to save the models and their weights. 
+
+2. "train_func" function in files is used to train the models using either with data augmentation or without augmentation. They are set to not use data augmentation by using parameter "data_augmentation" = False. Using Data augmentation, does not show any improvements so better to train without augmentation. However, code for using fit_generator is also included. 
+
 
 **Acknowledgements:** 
 
