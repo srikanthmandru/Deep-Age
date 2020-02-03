@@ -86,3 +86,6 @@ File usage instructions :
 
 2. "train_func" function in files is used to train the models using either with data augmentation or without augmentation. They are set to not use data augmentation by using parameter "data_augmentation" = False. Using Data augmentation, does not show any improvements so better to train without augmentation. However, code for using fit_generator is also included. 
 
+**Tools and APIs:
+
+Tensorflow, Keras, scikit-learn.
