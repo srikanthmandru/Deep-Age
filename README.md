@@ -37,10 +37,6 @@ About data and output classes:
 
 Evaluated models using accuracy, precision, recall, F1 score, ROC and AUC metrics and achieved ‘43.16%’ accuracy on test data with 14 classes and ‘59.04%’ with 8 classes. Furthermore, observed that models are doing well on predicting the age group of kids and old-aged people, showing coherence in performance with human prediction levels.
 
-**Acknowledgements:** 
-
-I sincerely thank the teams that have implemented models used here in this project and other teams who are continuously working and contributing their works to machine learning field. 
-
 **References:**
 
 [1] Gil Levi and Tal Hassner. Age and Gender Classification Using Convolutional Neural Networks. IEEE Workshop on Analysis and Modeling of Faces and Gestures (AMFG), at the IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Boston, 2015.
